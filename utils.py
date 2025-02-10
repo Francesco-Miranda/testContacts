@@ -30,6 +30,7 @@ def addContact(contactName, contactTel, contactEmail):
     contactsList["contacts"].append({"ID": contactsList["nextID"],
                                      "Name": contactName, "Tel": contactTel, "Email": contactEmail})
     contactsList["nextID"] += 1
+    return "Contatto aggiunto!"
 
 def deleteContact(contactID):
     if not contactsList["contacts"]:

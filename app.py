@@ -32,7 +32,7 @@ def main():
                     contactName = input("Nome: ")
                     contactTel = input("Tel: ")
                     contactEmail = input("Email: ")
-                    addContact(contactName, contactTel, contactEmail)
+                    print(addContact(contactName, contactTel, contactEmail))
                     
                     if(input("Aggiungere un altro contatto? Y/N: ").upper()[0] == "N"):
                         break
@@ -41,7 +41,7 @@ def main():
                     print("Quale contatto desideri eliminare?")
                     showContacts()
                     contactID = int(input("ID Contatto: "))
-                    deleteContact(contactID)
+                    print(deleteContact(contactID))
 
                     if(input("Eliminare un altro contatto? Y/N: ").upper()[0] == "N"):
                         break
